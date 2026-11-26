@@ -63,6 +63,40 @@ st.markdown("""
     padding: 30px;
     box-shadow: 0 8px 30px rgba(220, 130, 170, 0.18);
 }
+
+/* Mobile calculator layout */
+@media screen and (max-width: 640px) {
+
+    div[data-testid="stHorizontalBlock"] {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: 8px !important;
+    }
+
+    div[data-testid="column"] {
+        min-width: 0 !important;
+        flex: 1 1 0% !important;
+    }
+
+    .stButton > button {
+        width: 100% !important;
+        min-height: 52px !important;
+        font-size: 18px !important;
+        border-radius: 14px !important;
+        background-color: #F8C6DC !important;
+        color: #71334F !important;
+    }
+
+    .st-key-calculator_panel {
+        padding: 15px !important;
+    }
+
+    h1, h2, h3, p {
+        color: #873B60 !important;
+    }
+}
+
+
 </style>
 """, unsafe_allow_html=True)
 
